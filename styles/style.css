@@ -61,6 +61,11 @@
   font-weight: normal;
 }
 
+.header__link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -90,6 +95,54 @@
   height: 568px;
 
   background-color: var(--blue);
+}
+
+.description {
+  margin-top: 100px;
+  border: 1px solid red; /* Строительные леса в вёрстке :) */
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.two-columns__brief {
+  width: 175px
+}
+
+.two-columns__title {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--blue);
+
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: unset;
 }
 
 
