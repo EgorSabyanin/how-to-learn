@@ -71,12 +71,6 @@
   text-decoration: none;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
 .header__main-illustration {
   position: absolute;
   right: 0;
@@ -114,7 +108,7 @@
 }
 
 .two-columns__brief {
-  width: 175px
+  width: 175px;
 }
 
 .two-columns__title {
