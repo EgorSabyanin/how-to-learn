@@ -1,3 +1,10 @@
+:root {
+  --dark-grey: #1f1f1f; /* Фон */
+  --grey: #f2f2f2; /* Фон */
+  --blue: #2f80ed; /* Ссылки, фигуры */
+  --black: #000; /* Текст */
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,11 +16,49 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place__header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+
+  z-index: 100;
+}
+
 .header {
+  display: flex;
+  align-items: center;
+  position: relative;
+
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: var(--grey);
+}
+
+.header__title {
+
+  margin-left: 64px;
+
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+
+  width: 388px;
+
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -21,6 +66,32 @@
   height: 568px;
   width: 568px;
 }
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  z-index: 10;
+
+  padding: 0;
+  margin: 0;
+
+  width: 765px;
+  height: 608px;
+}
+
+.header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
+
+  width: 568px;
+  height: 568px;
+
+  background-color: var(--blue);
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
