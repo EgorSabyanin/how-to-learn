@@ -4,6 +4,11 @@
 @import url("../vendor/normalize.css");
 
 /*
+* Переменные для веб-сайта
+*/
+@import url(../vendor/variables/variables.css);
+
+/*
 * Шапка сайта
 */
 @import url(../blocks/header/__link/header__link.css);
@@ -82,11 +87,6 @@
 * Микс для веб-страницы
 */
 @import url(../blocks/page/page.css);
-
-/*
-* Переменные для веб-сайта
-*/
-@import url(../blocks/variables/variables.css);
 
 /*
 * Анимация поворота на 360
